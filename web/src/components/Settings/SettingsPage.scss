@@ -1,0 +1,33 @@
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.settings-page__top-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.settings-page__back-btn {
+  padding: 8px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+
+  &:hover {
+    background: var(--color-bg-secondary);
+  }
+}
+
+.settings-page__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text);
+}

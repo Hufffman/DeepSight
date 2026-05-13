@@ -1,0 +1,34 @@
+.app-shell {
+  min-height: 100vh;
+  background: var(--color-bg);
+  transition: background-color 0.2s;
+}
+
+.app-body {
+  display: flex;
+  height: calc(100vh - 55px);
+}
+
+.app-sidebar {
+  display: none;
+  height: 100%;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.app-placeholder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+}

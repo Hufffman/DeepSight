@@ -1,0 +1,15 @@
+.theme-toggle {
+  padding: 8px;
+  border-radius: var(--radius-md);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  transition: background-color 0.15s, color 0.15s;
+
+  &:hover {
+    background: var(--color-bg-secondary);
+  }
+}

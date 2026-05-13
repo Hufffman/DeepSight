@@ -1,0 +1,81 @@
+.markdown {
+  word-break: break-word;
+}
+
+// Inline code
+.markdown__code-inline {
+  background: var(--color-bg-secondary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace;
+}
+
+// Code block wrapper
+.markdown__code-block {
+  margin: 12px 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.markdown__code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  background: #334155;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+
+// Table wrapper
+.markdown__table-wrapper {
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+.markdown__table {
+  min-width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  font-size: 14px;
+}
+
+.markdown__th {
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+  background: var(--color-bg-secondary);
+  font-weight: 500;
+  text-align: left;
+}
+
+.markdown__td {
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+}
+
+// Lists
+.markdown ul,
+.markdown ol {
+  padding-left: 1.5em;
+  margin: 4px 0;
+}
+
+.markdown li {
+  margin-bottom: 2px;
+}
+
+.markdown li > ul,
+.markdown li > ol {
+  margin: 0;
+}
+
+// Links
+.markdown__link {
+  color: var(--color-primary);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

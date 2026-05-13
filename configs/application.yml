@@ -1,0 +1,52 @@
+app:
+  name: DeepSight
+  env: dev
+
+server:
+  port: 8088
+
+database:
+  host: localhost
+  port: 5432
+  user: root
+  password: 123456
+  dbname: deepsight
+  sslmode: disable
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+rustfs:
+  endpoint: "http://localhost:9000"
+  region: "us-east-1"
+  accessKeyId: "fYhlRBsSvR3dfiPJsdUX"
+  secretAccessKey: "9uiFYkdsND2IMZpSfol0ecBHLPH02OySxRDIQxit"
+  bucket: "deepsight"
+  useSSL: false
+  usePathStyle: true
+
+rabbitmq:
+  host: localhost
+  port: 5672
+  user: root
+  password: 123456
+  exchange: "DeepSight-Exchange"
+  bindingKey: "DeepSight-BindKey"
+  queue: "DeepSight-Queue"
+
+openai:
+  baseUrl: https://dashscope.aliyuncs.com/compatible-mode/v1
+  apiKey: sk-123456
+  embeddingModel: text-embedding-v2
+  chatModel: deepseek-v4-pro
+  embeddingBatchSize: 16
+
+jwt:
+  secret: 123456
+  expire: 24h
+
+tavily:
+  apikey: "tvly-dev-123456"
